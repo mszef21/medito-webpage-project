@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  padding: 0 25%;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  margin: 25% 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.left-section {
+  margin-right: 2.5%;
+}
+
+.right-section {
+  margin-left: 2.5%;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+#progress-percent,
+#amount-raised {
+  font-weight: bold;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+#progress-percent,
+#amount-raised,
+#goal-amount {
+  font-weight: bold;
+}
+span {
+  margin-top: 30px;
+}
+
+#progress-percent {
+  color: #4caf50;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.share-button,
+.donate-now-button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-button:hover,
+.donate-now-button:hover {
+  background-color: #45a049;
+}
+
+/* kod cssa z tutoriala */
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ebeef1;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 40px 30px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.wrapper h3 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.skills-wrapper {
+  padding: 0 20px;
+}
+
+.skills-wrapper .bar {
+  margin: 20px 0;
+}
+
+.skills-wrapper .bar .info {
+  margin-bottom: 10px;
+}
+
+.skills-wrapper .bar .info span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.skills-wrapper .bar .progress-bar {
+  width: 100%;
+  height: 15px;
+  background-color: #dddddd;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  width: 0;
+  background-color: #960138;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    width: 100%;
+  }
+}
+
+.progress-bar .html {
+  width: 90%;
+}
