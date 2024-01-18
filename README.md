@@ -12,5 +12,9 @@ Welcome to the Medito Flexible Fundraising Single Web Page project! This project
 - **Rewards for Donors:** Offer incentives for different donation tiers.
 - **Dynamic Notification Bar:** Show (future) real-time updates on donations.
 
+## Aditional Information
+
+index.html displays the donation level container on the left side of the bar, along with the description on the right. On the other hand, index2.html shows the donation level container on the right side of the bar, with the description on the left. (just check it out)
+
 ## Authors
 masny_fred
