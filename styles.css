@@ -23,7 +23,7 @@ body {
   color: #fff;
 }
 .container {
-  max-width: 400px; /* Adjust as needed */
+  max-width: 400px;
   margin: 0 auto;
 }
 .main-section {
@@ -43,7 +43,7 @@ h3 span {
 }
 .left-section,
 .right-section {
-  margin: 25px;
+  margin: 50px 20px;
   border-radius: 10px;
   background-color: #151515;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -58,6 +58,15 @@ h3 span {
 }
 .left-section h1 {
   font-size: 34px;
+}
+.goal {
+  font-size: 34px;
+}
+.goal-p {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 17px;
+  text-align: justify;
 }
 .text-box {
   padding: 20px;
@@ -182,7 +191,6 @@ h3 span {
 
 .button-28:hover {
   color: #fff;
-  /*background-color: #1a1a1a;*/
   background-color: rgb(145, 125, 240);
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
@@ -208,11 +216,11 @@ h3 span {
 }
 
 .accordion-item {
-  background-color: #ffffff; /* White background for items */
-  border: 1px solid #818181; /* Light border */
+  background-color: #ffffff;
+  border: 1px solid #818181;
   border-radius: 8px;
   margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   min-width: 60%;
 }
 
@@ -234,7 +242,7 @@ h3 span {
 }
 
 .accordion-header:hover {
-  background-color: #1a1a1a; /* Darker shade of purple */
+  background-color: #1a1a1a;
 }
 
 .accordion-content {
@@ -391,7 +399,6 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   border-bottom: rgb(145, 125, 240) solid 1px;
-  /*border-bottom: #000 solid 1px;*/
 }
 
 .navbar img {
@@ -592,8 +599,9 @@ select:focus {
 }
 
 .container-leaderboard {
-  min-width: 300px;
+  max-width: 500px;
   height: auto;
+  margin: 0 auto;
   border-radius: 10px;
   background-color: rgb(53, 53, 56);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -660,6 +668,9 @@ select:focus {
   .left-section p {
     text-align: left;
   }
+  .left-section {
+    margin: 15px 20px;
+  }
   .form-row {
     flex-direction: column;
   }
@@ -677,4 +688,32 @@ select:focus {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+/* notifitation navbar */
+
+#notification-container {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin: 20px 0 20px 0;
+}
+
+#notification-bar {
+  background-color: #917df0;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: none;
+}
+
+#close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
 }
